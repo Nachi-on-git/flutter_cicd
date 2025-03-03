@@ -11,29 +11,18 @@ if (flutterRoot == null) {
     throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
 }
 
-def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
-if (flutterVersionCode == null) {
-    flutterVersionCode = '1'
-}
-
-def flutterVersionName = localProperties.getProperty('flutter.versionName')
-if (flutterVersionName == null) {
-    flutterVersionName = '1.0'
-}
-
-// apply plugin: 'com.android.application'
-// apply plugin: 'kotlin-android'
-// apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode') ?: '1'
+def flutterVersionName = localProperties.getProperty('flutter.versionName') ?: '1.0'
 
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id '$flutterRoot/packages/flutter_tools/gradle/flutter.gradle'
+    id 'dev.flutter.flutter-gradle-plugin' // ✅ Correct way to apply Flutter Gradle Plugin
 }
 
-
 android {
-    compileSdkVersion flutter.compileSdkVersion
+    namespace "com.example.flutter_cicd" // ✅ Add namespace explicitly
+    compileSdkVersion 34 // ✅ Use a fixed compileSdkVersion or `flutter.compileSdkVersion`
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -50,20 +39,15 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.example.flutter_cicd"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdkVersion flutter.minSdkVersion
-        targetSdkVersion flutter.targetSdkVersion
+        minSdkVersion 21 // ✅ Specify minSdkVersion explicitly if `flutter.minSdkVersion` fails
+        targetSdkVersion 34 // ✅ Use a fixed targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
         }
     }
@@ -74,5 +58,5 @@ flutter {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
