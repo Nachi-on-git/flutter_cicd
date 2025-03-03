@@ -1642,6 +1642,88 @@ androidx.viewpager.widget.ViewPager$SavedState
 androidx.viewpager.widget.ViewPager$SimpleOnPageChangeListener
 androidx.viewpager.widget.ViewPager$ViewPositionComparator
 androidx.viewpager.widget.ViewPager
+com.android.billingclient.BuildConfig
+com.android.billingclient.R
+com.android.billingclient.api.AccountIdentifiers
+com.android.billingclient.api.AcknowledgePurchaseParams$Builder
+com.android.billingclient.api.AcknowledgePurchaseParams
+com.android.billingclient.api.AcknowledgePurchaseResponseListener
+com.android.billingclient.api.BillingClient$BillingResponseCode
+com.android.billingclient.api.BillingClient$Builder
+com.android.billingclient.api.BillingClient$ConnectionState
+com.android.billingclient.api.BillingClient$FeatureType
+com.android.billingclient.api.BillingClient$SkuType
+com.android.billingclient.api.BillingClient
+com.android.billingclient.api.BillingClientImpl
+com.android.billingclient.api.BillingClientStateListener
+com.android.billingclient.api.BillingFlowParams$Builder
+com.android.billingclient.api.BillingFlowParams$ProrationMode
+com.android.billingclient.api.BillingFlowParams$SubscriptionUpdateParams$Builder
+com.android.billingclient.api.BillingFlowParams$SubscriptionUpdateParams
+com.android.billingclient.api.BillingFlowParams
+com.android.billingclient.api.BillingResult$Builder:
+    private void <init>()
+com.android.billingclient.api.BillingResult:
+    public java.lang.String getDebugMessage()
+com.android.billingclient.api.ConsumeParams$Builder
+com.android.billingclient.api.ConsumeParams
+com.android.billingclient.api.ConsumeResponseListener
+com.android.billingclient.api.PriceChangeConfirmationListener
+com.android.billingclient.api.PriceChangeFlowParams$Builder
+com.android.billingclient.api.PriceChangeFlowParams
+com.android.billingclient.api.Purchase$PurchaseState
+com.android.billingclient.api.Purchase$PurchasesResult
+com.android.billingclient.api.Purchase
+com.android.billingclient.api.PurchaseHistoryRecord
+com.android.billingclient.api.PurchaseHistoryResponseListener
+com.android.billingclient.api.PurchasesResponseListener
+com.android.billingclient.api.PurchasesUpdatedListener
+com.android.billingclient.api.SkuDetails
+com.android.billingclient.api.SkuDetailsParams$Builder
+com.android.billingclient.api.SkuDetailsParams
+com.android.billingclient.api.SkuDetailsResponseListener
+com.android.billingclient.api.zza
+com.android.billingclient.api.zzaa
+com.android.billingclient.api.zzab
+com.android.billingclient.api.zzac
+com.android.billingclient.api.zzad
+com.android.billingclient.api.zzae
+com.android.billingclient.api.zzaf
+com.android.billingclient.api.zzag
+com.android.billingclient.api.zzah
+com.android.billingclient.api.zzai
+com.android.billingclient.api.zzak
+com.android.billingclient.api.zzal
+com.android.billingclient.api.zzam
+com.android.billingclient.api.zzan
+com.android.billingclient.api.zzao
+com.android.billingclient.api.zzap
+com.android.billingclient.api.zzaq
+com.android.billingclient.api.zzb
+com.android.billingclient.api.zzc
+com.android.billingclient.api.zzd
+com.android.billingclient.api.zze
+com.android.billingclient.api.zzf
+com.android.billingclient.api.zzg
+com.android.billingclient.api.zzh
+com.android.billingclient.api.zzi
+com.android.billingclient.api.zzj
+com.android.billingclient.api.zzk
+com.android.billingclient.api.zzl
+com.android.billingclient.api.zzm
+com.android.billingclient.api.zzn
+com.android.billingclient.api.zzo
+com.android.billingclient.api.zzp
+com.android.billingclient.api.zzq
+com.android.billingclient.api.zzr
+com.android.billingclient.api.zzs
+com.android.billingclient.api.zzt
+com.android.billingclient.api.zzu
+com.android.billingclient.api.zzv
+com.android.billingclient.api.zzw
+com.android.billingclient.api.zzx
+com.android.billingclient.api.zzy
+com.android.billingclient.api.zzz
 com.example.flutter_cicd.BuildConfig
 com.example.flutter_cicd.R$attr
 com.example.flutter_cicd.R$color
@@ -1655,6 +1737,32 @@ com.example.flutter_cicd.R$string
 com.example.flutter_cicd.R$style
 com.example.flutter_cicd.R$styleable
 com.example.flutter_cicd.R
+com.google.android.gms.internal.play_billing.zza:
+    public static android.os.Bundle zzb(com.android.billingclient.api.AcknowledgePurchaseParams,java.lang.String)
+    public static android.os.Bundle zzc(com.android.billingclient.api.ConsumeParams,boolean,java.lang.String)
+    public static android.os.Bundle zzd(int,boolean,java.lang.String,java.lang.String,java.util.ArrayList)
+    public static android.os.Bundle zze(com.android.billingclient.api.BillingFlowParams,boolean,boolean,java.lang.String)
+    public static android.os.Bundle zzf(boolean,boolean,java.lang.String)
+    public static java.util.List zzi(android.os.Bundle)
+    private static com.android.billingclient.api.Purchase zzl(java.lang.String,java.lang.String)
+com.google.android.gms.internal.play_billing.zzb
+com.google.android.gms.internal.play_billing.zzc
+com.google.android.gms.internal.play_billing.zzd
+com.google.android.gms.internal.play_billing.zze
+com.google.android.gms.internal.play_billing.zzf
+com.google.android.gms.internal.play_billing.zzg
+com.google.android.gms.internal.play_billing.zzh
+com.google.android.gms.internal.play_billing.zzi
+com.google.android.gms.internal.play_billing.zzj
+com.google.android.gms.internal.play_billing.zzk
+com.google.android.gms.internal.play_billing.zzl
+com.google.android.gms.internal.play_billing.zzm
+com.google.android.gms.internal.play_billing.zzn
+com.google.android.gms.internal.play_billing.zzo
+com.google.android.gms.internal.play_billing.zzp
+com.google.android.gms.internal.play_billing.zzq
+com.google.android.gms.internal.play_billing.zzr
+com.google.android.gms.internal.play_billing.zzs
 io.flutter.BuildConfig
 io.flutter.FlutterInjector$Builder:
     public io.flutter.FlutterInjector$Builder setDeferredComponentManager(io.flutter.embedding.engine.deferredcomponents.DeferredComponentManager)
@@ -8619,6 +8727,8 @@ io.flutter.plugin.platform.PlatformView$-CC
 io.flutter.plugin.platform.VirtualDisplayController:
     private static java.lang.String TAG
 io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
+io.flutter.view.VsyncWaiter:
+    public static io.flutter.view.VsyncWaiter getInstance(float,io.flutter.embedding.engine.FlutterJNI)
 kotlin.collections.ArraysKt:
     public static synthetic bridge java.util.List sortedWith(java.lang.Object[],java.util.Comparator)
 kotlin.collections.ArraysKt___ArraysJvmKt:
